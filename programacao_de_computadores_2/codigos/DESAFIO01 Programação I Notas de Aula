@@ -1,0 +1,16 @@
+// teste 
+// Autor : Eduardo Bauer
+// Data : 02/03/2024
+#include<stdio.h>
+void main()
+{
+         int numero, i, soma;
+         float media;
+         for(i=0;i<3;i++){
+                  printf("Digite a %d nota: ", i+1);
+                  scanf("%d", &numero);
+                  soma = soma + numero;
+         }
+         media = soma/3;
+         printf("A media ficou %.2f", media);
+}

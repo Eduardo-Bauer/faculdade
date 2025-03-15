@@ -1,0 +1,14 @@
+// Fa¸ca um programa que leia 2 valores reais v1 e v2 e calcule e escreva a ´area do triˆangulo que tem base igual a v1 e altura igual a v2. Dica:A ´area de um triˆangulo ´e dada pela express˜ao: (base x altura)/2 
+// Autor : Eduardo Bauer
+// Data : 02/03/2024
+#include<stdio.h>
+void main()
+{
+         float v1, v2, area;
+         printf("digite a base do triangulo: ");
+         scanf("%f", &v1);
+         printf("digite a altura do triangulo: ");
+         scanf("%f", &v2);
+         area = (v1*v2)/2;
+         printf("A area do triangulo e %.2f", area);
+}

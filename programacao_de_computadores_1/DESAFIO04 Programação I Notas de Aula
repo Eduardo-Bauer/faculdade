@@ -1,0 +1,17 @@
+// Fa¸ca um programa que leia 2 valores e escreva o maior deles. O maior entre dois valores quaisquer v1 e v2 pode ser calculado pela express˜ao
+// Autor : Eduardo Bauer
+// Data : 02/03/2024
+#include<stdio.h>
+
+void main()
+{
+         int maior, v1, v2;
+         printf("digite dois valores: ");
+         scanf("%d%d", &v1, &v2);
+         if (v1 > v2){
+                  maior = v1;
+         } else {
+                  maior = v2;
+         }
+         printf("O maior valor digitado foi %d", maior);
+}

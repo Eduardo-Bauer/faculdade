@@ -1,0 +1,53 @@
+// Autor : Eduardo Bauer
+// Data : 08/11/2023
+#include<stdio.h>
+
+void mostra_vetor(int vetor[10], int tamanho) {
+         int i;
+         for(i=0;i<tamanho;i++) {
+                  printf("%d", vetor[i]);
+         }
+         printf("\n");
+}
+
+int procura(int vetor[10], int tamanho, int numero){
+         int i, posicao;
+         posicao = -1;
+     for(i=0;i<tamanho;i++) {
+              if(vetor[i]==numero) {
+                    posicao = i;
+              }
+     }
+     return posicao;
+}
+
+float media_do_vetor(float vetor[10], int tamanho){
+	float soma, i;
+	soma = 0;
+	for(i=0;i<tamanho;i++){
+		soma = soma + vetor[i];
+	}
+	return soma / tamanho;
+}
+
+void main() {
+         int v[10], i, n, pos;
+
+         for(i=0;i<10;i++){
+                  printf("informe um numero\n");
+                  scanf("%d", &v[i]);
+         }
+
+         mostra_vetor(v,10);
+
+         printf("informe um numero para procurar:\n");
+         scanf("%d", &n);
+
+         pos = procura(v,10,n);
+      
+         if(pos>=0) {
+                  printf("o numero %d existe no vetor\n", n);
+         } else {
+                  printf("não encontrei %d\n", n);
+         }
+}

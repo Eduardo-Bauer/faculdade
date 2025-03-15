@@ -1,0 +1,8 @@
+Tailandia 2 2 2
+Suica 3 2 2
+Colombia 3 2 3
+Australia 8 11 10
+Italia 8 12 8
+Franca de pobre 10 18 14
+Brasil 7 6 6
+Belgica 2 2 2
